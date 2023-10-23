@@ -10,16 +10,16 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: ${({ theme }) => theme.colors.site.background};
+        background-color: #FBFBFE;
         font-family: 'Inter', sans-serif;
         font-size: 18px;
         overflow-y: scroll;
-        color: ${({ theme }) => theme.colors.site.text};
+        color: #6E7E91;
         word-break: break-word;
         padding-bottom: 108px;
         transition: background 0.3s;
 
-        @media(max-width: ${({ theme}) => theme.breakpoint.mobileMax}px) {
+        @media(max-width: 767px) {
             padding-bottom: 32px;
         }
     }
