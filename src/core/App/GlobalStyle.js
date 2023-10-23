@@ -9,7 +9,18 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: inherit;
     }
 
-    .body {
-        background-color: #FBFBFE;
+    body {
+        background-color: ${({ theme }) => theme.colors.site.background};
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        overflow-y: scroll;
+        color: ${({ theme }) => theme.colors.site.text};
+        word-break: break-word;
+        padding-bottom: 108px;
+        transition: background 0.3s;
+
+        @media(max-width: ${({ theme}) => theme.breakpoint.mobileMax}px) {
+            padding-bottom: 32px;
+        }
     }
 `;
