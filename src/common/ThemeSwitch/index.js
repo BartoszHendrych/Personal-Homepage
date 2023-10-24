@@ -4,7 +4,7 @@ export const ThemeSwitch = () => {
    return (
       <Wrapper>
          <Button>
-            <Text></Text>
+            <Text>Dark mode</Text>
             <Box>
                <IconWrapper>
                   <Icon />
