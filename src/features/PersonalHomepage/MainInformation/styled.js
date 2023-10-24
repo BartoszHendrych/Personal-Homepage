@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Avatar = styled.img`
-    width: 22vw;
+    width: 20vw;
     height: 380px;
     border-radius: 50%;
 `;
@@ -18,12 +18,14 @@ export const ThisIs = styled.div`
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: initial;
+    color: #6E7E91;
 `;
 
 export const Name = styled.h1`
     font-size: 38px;
     font-weight: 900;
     margin: 12px 0 0 0;
+    color: #252525;
 `;
 
 export const Summary = styled.p`
