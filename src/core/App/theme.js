@@ -1,4 +1,4 @@
-const colorNames = {
+const color = {
     scienceBlue: "#0366D6",
     blumine: "#1F5189",
     dodgerBlue: "#2188FF",
@@ -20,37 +20,35 @@ const colorNames = {
 const common = {
     breakpoints: {
         mobileMax: 767,
-        tabletVerticalMax: 991,
-        tabletHorizontalMax: 1199,
-    },
-    boxShadow: "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03)",
-    borderRadiusSmall: "4px",
+        tablet: 990,
+        tabletMax: 1199,
+    }
 };
 
 export const themeLight = {
-    ...colorNames,
+    ...color,
     colors: {
-        primary: colorNames.scienceBlue,
-        textPrimary: colorNames.mineShaft,
+        primary: color.scienceBlue,
+        textPrimary: color.mineShaft,
         site: {
-            background: colorNames.whiteLilac,
-            text: colorNames.slateGray,
+            background: color.whiteLilac,
+            text: color.slateGray,
         },
         buttonLink: {
-            text: colorNames.white,
-            border: colorNames.ironTransparent,
-            shadow: colorNames.anakiwa,
+            text: color.white,
+            border: color.ironTransparent,
+            shadow: color.anakiwa,
         },
-        boxBackground: colorNames.white,
-        headerLine: colorNames.mercury,
+        boxBackground: color.white,
+        headerLine: color.mercury,
         title: {
-            border: colorNames.porcelain,
-            borderHover: colorNames.tropicalBlue,
-            header: colorNames.scienceBlue,
+            border: color.porcelain,
+            borderHover: color.tropicalBlue,
+            header: color.scienceBlue,
         },
         themeSwitch: {
-            background: colorNames.mercury,
-            icon: colorNames.white,
+            background: color.mercury,
+            icon: color.white,
         },
     },
 };
@@ -58,27 +56,27 @@ export const themeLight = {
 export const themeDark = {
     ...common,
     colors: {
-        primary: colorNames.dodgerBlue,
-        textPrimary: colorNames.white,
+        primary: color.dodgerBlue,
+        textPrimary: color.white,
         site: {
-            background: colorNames.mineShaft,
-            text: colorNames.white,
+            background: color.mineShaft,
+            text: color.white,
         },
         buttonLink: {
-            text: colorNames.white,
-            border: colorNames.ironTransparent,
-            shadow: colorNames.shipCove,
+            text: color.white,
+            border: color.ironTransparent,
+            shadow: color.shipCove,
         },
-        boxBackground: colorNames.mineShaftLighter,
-        headerLine: colorNames.tundora,
+        boxBackground: color.mineShaftLighter,
+        headerLine: color.tundora,
         title: {
-            border: colorNames.tundora,
-            borderHover: colorNames.blumine,
-            header: colorNames.white,
+            border: color.tundora,
+            borderHover: color.blumine,
+            header: color.white,
         },
         themeSwitch: {
-            background: colorNames.doveGray,
-            icon: colorNames.mineShaft,
+            background: color.doveGray,
+            icon: color.mineShaft,
         },
     },
 };
