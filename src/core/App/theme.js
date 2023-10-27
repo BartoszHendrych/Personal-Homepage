@@ -19,9 +19,8 @@ const color = {
 
 const common = {
     breakpoints: {
-        mobileMax: 767,
-        tablet: 990,
-        tabletMax: 1199,
+        mobile: 767,
+        tablet: 998,
     }
 };
 
@@ -33,6 +32,7 @@ export const themeLight = {
         site: {
             background: color.whiteLilac,
             text: color.slateGray,
+            hover: color.dodgerBlue,
         },
         buttonLink: {
             text: color.white,
@@ -40,6 +40,9 @@ export const themeLight = {
             shadow: color.anakiwa,
         },
         boxBackground: color.white,
+        boxBackgroundHover: {
+            border: color.white,
+        },
         headerLine: color.mercury,
         title: {
             border: color.porcelain,
@@ -68,6 +71,9 @@ export const themeDark = {
             shadow: color.shipCove,
         },
         boxBackground: color.mineShaftLighter,
+        boxBackgroundHover: {
+            border: color.ironTransparent,
+        },
         headerLine: color.tundora,
         title: {
             border: color.tundora,
