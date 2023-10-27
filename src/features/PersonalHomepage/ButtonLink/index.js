@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { themeDark } from "../../../core/App/theme";
 
 export const ButtonLink = styled.a`
     display: inline-flex;
@@ -9,8 +10,8 @@ export const ButtonLink = styled.a`
     align-items: center;
     border-radius: 4px;
     border: 1px solid;
-    background: #0366D6;
-    color: #ffffff;
+    background: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.buttonLink.text};
     text-align: center;
     font-size: 21px;
     font-style: normal;
@@ -19,10 +20,10 @@ export const ButtonLink = styled.a`
 
     &:hover {
         box-shadow: 0px 0px 0px 2px;
-        background: #2188FF;
+        background: ${({ theme }) => theme.colors.site.hover};
     }
 
-    @media(max-width: 767px) {
+    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
         font-size: 18px;
         gap: 12px;
     }

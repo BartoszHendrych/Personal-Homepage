@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as GitHubIcon} from "./GitHubPortfolio.svg";
+import { themeDark } from "../../../core/App/theme";
 
 export const Section = styled.section`
     margin-top: 72px;
@@ -10,7 +11,7 @@ export const Section = styled.section`
 `;
  
 export const StyledGitHubIcon = styled(GitHubIcon)`
-    color: #0366D6;
+    color: ${({ theme }) => theme.colors.primary};
     margin-bottom: 8px;
 `;
 
@@ -21,12 +22,12 @@ export const Header = styled.header`
 export const MyRecentProjects = styled.h3`
     font-size: 20px;
     font-weight: 400;
-    color: #252525;
+    color: ${({ theme }) => theme.colors.textPrimary};
     text-align: center;
     margin-top: 8px;
     margin-bottom: 24px;
 
-    @media(max-width: 767px) {
+    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
        font-size: 17px;
        margin-top: 16px;
     }
@@ -38,9 +39,9 @@ export const Title = styled.p`
     font-size: 30px;
     font-style: normal;
     font-weight: bold;
-    color: #252525;
+    color: ${({ theme }) => theme.colors.textPrimary};
 
-    @media(max-width: 767px) {
+    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
         font-size: 18px;
     }
 `;

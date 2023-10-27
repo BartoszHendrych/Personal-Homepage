@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as MessageIcon } from "./Message.svg";
+import { themeDark } from "../../../core/App/theme";
 
 export const Wrapper = styled.header`
     display: grid;
@@ -8,11 +9,11 @@ export const Wrapper = styled.header`
     grid-gap: 64px;
     align-items: center;
 
-    @media(max-width: 998px) {
+    @media(max-width: ${() => themeDark.breakpoints.tablet}px) {
         grid-gap: 32px;
     }
 
-    @media(max-width: 767px) {
+    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
         grid-template-columns: 1fr;
         grid-gap: 12px;
     }
@@ -25,7 +26,7 @@ export const Avatar = styled.img`
     max-height: 420px;
     border-radius: 50%;
 
-    @media(max-width: 767px) {
+    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
         width: 150px;
         height: 165px;
     }
@@ -36,16 +37,16 @@ export const ThisIs = styled.div`
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: initial;
-    color: #6E7E91;
+    color: ${({ theme }) => theme.colors.site.text};
 `;
 
 export const Name = styled.h1`
     font-size: 38px;
     font-weight: 900;
     margin: 12px 0 0 0;
-    color: #252525;
+    color: ${({ theme }) => theme.colors.textPrimary};
 
-    @media(max-width: 767px) {
+    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
         font-size: 22px;
         margin-top: 8px;
     }
@@ -56,9 +57,9 @@ export const Summary = styled.p`
     font-size: 20px;
     line-height: 1.4;
     margin: 36px 0 0 0;
-    color: #6E7E91;
+    color: ${({ theme }) => theme.colors.site.text};
 
-    @media(max-width: 767px) {
+    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
         font-size: 17px;
         margin-top: 16px;
         max-width: 550px;
@@ -66,7 +67,7 @@ export const Summary = styled.p`
 `;
 
 export const StyledMessageIcon = styled(MessageIcon)`
-    color: #ffffff;
+    color: ${({ theme }) => theme.colors.site.boxBackground};
     justify-content: center;
     align-items: center;
 `;
