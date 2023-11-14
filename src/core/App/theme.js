@@ -17,13 +17,6 @@ const color = {
     mineShaftLighter: "#313131",
 };
 
-const common = {
-    breakpoints: {
-        mobile: 767,
-        tablet: 998,
-    }
-};
-
 export const themeLight = {
     ...color,
     colors: {
@@ -54,10 +47,13 @@ export const themeLight = {
             icon: color.white,
         },
     },
+    breakpoints: {
+        mobile: 767,
+        tablet: 998,
+    }
 };
 
 export const themeDark = {
-    ...common,
     colors: {
         primary: color.dodgerBlue,
         textPrimary: color.white,
@@ -85,4 +81,8 @@ export const themeDark = {
             icon: color.mineShaft,
         },
     },
+    breakpoints: {
+        mobile: 767,
+        tablet: 998,
+    }
 };
