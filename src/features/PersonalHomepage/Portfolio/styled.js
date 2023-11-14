@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { ReactComponent as GitHubIcon} from "./GitHubPortfolio.svg";
-import { themeDark } from "../../../core/App/theme";
 
 export const Section = styled.section`
     margin-top: 72px;
@@ -27,7 +26,7 @@ export const MyRecentProjects = styled.h3`
     margin-top: 8px;
     margin-bottom: 24px;
 
-    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
        font-size: 17px;
        margin-top: 16px;
     }
@@ -41,7 +40,7 @@ export const Title = styled.p`
     font-weight: bold;
     color: ${({ theme }) => theme.colors.textPrimary};
 
-    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         font-size: 18px;
     }
 `;

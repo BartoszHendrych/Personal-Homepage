@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { ReactComponent as MessageIcon } from "./Message.svg";
-import { themeDark } from "../../../core/App/theme";
 
 export const Wrapper = styled.header`
     display: grid;
@@ -9,11 +8,11 @@ export const Wrapper = styled.header`
     grid-gap: 64px;
     align-items: center;
 
-    @media(max-width: ${() => themeDark.breakpoints.tablet}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         grid-gap: 32px;
     }
 
-    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         grid-template-columns: 1fr;
         grid-gap: 12px;
     }
@@ -26,7 +25,7 @@ export const Avatar = styled.img`
     max-height: 420px;
     border-radius: 50%;
 
-    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         width: 150px;
         height: 165px;
     }
@@ -46,7 +45,7 @@ export const Name = styled.h1`
     margin: 12px 0 0 0;
     color: ${({ theme }) => theme.colors.textPrimary};
 
-    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         font-size: 22px;
         margin-top: 8px;
     }
@@ -59,7 +58,7 @@ export const Summary = styled.p`
     margin: 36px 0 0 0;
     color: ${({ theme }) => theme.colors.site.text};
 
-    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         font-size: 17px;
         margin-top: 16px;
         max-width: 550px;

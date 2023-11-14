@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import { themeDark } from "./theme";
 
 export const GlobalStyle = createGlobalStyle`
     html{
@@ -20,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
         padding-bottom: 108px;
         transition: background 0.3s;
 
-        @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+        @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
             padding-bottom: 32px;
         }
     }

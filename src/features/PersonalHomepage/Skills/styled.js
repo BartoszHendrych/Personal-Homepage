@@ -8,7 +8,7 @@ export const Section = styled.div`
     background:${({ theme }) => theme.colors.boxBackground};
     border-radius: 5px;
     
-    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         margin-top: 48px;
         padding: 16px;
     }
@@ -24,7 +24,7 @@ export const List = styled.ul`
     padding: 0;
 
 
-    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         grid-template-columns: 1fr;
         margin-top: 12px;
         font-size: 14px;
@@ -37,7 +37,7 @@ export const Item = styled.li`
     font-size: 18px;
     font-weight: 400;
 
-    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         font-size: 14px;
     }
 `;
@@ -50,7 +50,7 @@ export const Title = styled.h3`
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(209, 213, 218, 0.30); 
 
-    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         font-size: 18px;
         padding-bottom: 12px;
     }
@@ -61,7 +61,7 @@ export const StyledEllipse = styled(EllipseIcon)`
     margin-right: 16px;
 
     
-    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         width: 6px;
         height: auto;
         margin-right: 8px;
