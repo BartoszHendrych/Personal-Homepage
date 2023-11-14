@@ -1,7 +1,7 @@
-import { email } from "../email";
 import { Avatar, Summary, ThisIs, Wrapper, Name, StyledMessageIcon } from "./styled";
 import BartoszHendrychProfile from "./zdjCV.jpg";
 import { ButtonLink } from "../ButtonLink";
+import { email } from "../data";
 
 export const MainInformation = () => (
     <Wrapper>

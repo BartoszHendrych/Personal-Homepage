@@ -1,6 +1,6 @@
+import { email } from "../data"
 import{ SocialIcons} from "./SocialIcons"
 import { Wrapper, LetsTalk, EmailWrapper, EmailLink, Paragraph } from "./styled"
-import { email } from "../email";
 
 export const Footer = () => (
     <Wrapper>
