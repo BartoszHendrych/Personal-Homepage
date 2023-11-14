@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { themeDark } from "../../../core/App/theme";
 
 export const ButtonLink = styled.a`
     display: inline-flex;
@@ -23,7 +22,7 @@ export const ButtonLink = styled.a`
         background: ${({ theme }) => theme.colors.site.hover};
     }
 
-    @media(max-width: ${() => themeDark.breakpoints.mobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         font-size: 18px;
         gap: 12px;
     }
