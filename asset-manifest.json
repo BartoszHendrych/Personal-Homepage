@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.85b261e3.js",
+    "main.js": "/personal-homepage/static/js/main.6ad47ae7.js",
     "static/js/787.162bc9a0.chunk.js": "/personal-homepage/static/js/787.162bc9a0.chunk.js",
     "static/media/zdjCV.jpg": "/personal-homepage/static/media/zdjCV.b71ddef2e7a84f90c90d.jpg",
     "static/media/GitHub.svg": "/personal-homepage/static/media/GitHub.51fed3aca4a4df358ac55f18376a88cd.svg",
-    "static/media/sun.svg": "/personal-homepage/static/media/sun.b64b0da3c3b018b5467db06712d9de1b.svg",
+    "static/media/sun.svg": "/personal-homepage/static/media/sun.aadab3c313aa7a9ac9f7685aefc99eb0.svg",
     "static/media/GitHubPortfolio.svg": "/personal-homepage/static/media/GitHubPortfolio.e25902771611682c01f181886703b510.svg",
     "static/media/LinkedIN.svg": "/personal-homepage/static/media/LinkedIN.8e4ac02ce7feebba4972d3b4e4c08775.svg",
     "index.html": "/personal-homepage/index.html",
     "static/media/Message.svg": "/personal-homepage/static/media/Message.52b07e542ff4ef4d16b6a8d67eccc68c.svg",
     "static/media/Ellipse.svg": "/personal-homepage/static/media/Ellipse.b5f119c1180cbfee94cf48eb8fa80133.svg",
-    "main.85b261e3.js.map": "/personal-homepage/static/js/main.85b261e3.js.map",
+    "main.6ad47ae7.js.map": "/personal-homepage/static/js/main.6ad47ae7.js.map",
     "787.162bc9a0.chunk.js.map": "/personal-homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.85b261e3.js"
+    "static/js/main.6ad47ae7.js"
   ]
 }
