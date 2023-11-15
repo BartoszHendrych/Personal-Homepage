@@ -1,8 +1,8 @@
 {
-  "name": "personal-homepage",
+  "name": "Perosnal Homepage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bartoszhendrych.github.io/personal-homepage/",
+  "homepage": "https://bartoszhendrych.github.io/Personal-Homepage/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
