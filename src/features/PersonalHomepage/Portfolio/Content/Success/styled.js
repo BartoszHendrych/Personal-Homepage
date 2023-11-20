@@ -25,6 +25,10 @@ export const Tile = styled.div`
   padding: 56px;
   background: ${({ theme }) => theme.colors.boxBackground};
 
+  &:hover {
+    border: 5px solid ${({ theme }) => theme.colors.title.borderHover};
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     padding: 20px;
   }
