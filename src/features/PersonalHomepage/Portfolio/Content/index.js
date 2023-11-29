@@ -4,12 +4,14 @@ import { Success } from "./Success"
 
 
 export const Content = ({ projects }) => {
-    if (projects === "error") {
-        return <ErrorBox />
-    } else
-        if (projects === "loading") {
-            return <Loading />
-        } else {
-            return <Success projects={projects} />
-        }
+    switch (projects) {
+        case "error":
+            return <ErrorBox />;
+
+        case "loading":
+            return <Loading />;
+            
+        default:
+            return <Success projects={projects} />;
+    }
 };
