@@ -17,7 +17,7 @@ export const Portfolio = () => {
         .catch(() => {
           setProjects("error");
         });
-    }, 1000); //to show loader;
+    }, 1000);
 
     return () => {
       clearTimeout(timeoutId);
